@@ -45,7 +45,7 @@ balance.addEventListener("click", () => {
   } else if (bill.valueAsNumber > given.valueAsNumber) {
     display.innerHTML = `you need to pay ${
       bill.valueAsNumber - given.valueAsNumber
-    } rs more`;
+    }rs more`;
   } else if (bill.valueAsNumber === given.valueAsNumber) {
     display.innerHTML = "Amount paid";
     bill.value = "";
@@ -67,6 +67,10 @@ paid.addEventListener("click", () => {
     bill.value = "";
     given.value = "";
     given.classList.add("given_amount1");
+  } else if (bill.valueAsNumber > given.valueAsNumber) {
+    display.innerHTML = `you need to pay ${
+      bill.valueAsNumber - given.valueAsNumber
+    }rs more`;
   } else {
     display.innerHTML = `please Enter the Bill amount`;
   }

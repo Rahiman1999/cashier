@@ -52,6 +52,11 @@ span {
     margin-left: 25%;
   }
 }
+@media only screen and (max-width: 400px) {
+  input {
+    margin-left: 10%;
+  }
+}
 @media only screen and (max-width: 300px) {
   input {
     margin-left: 6%;
